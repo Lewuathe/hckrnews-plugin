@@ -1,0 +1,16 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt">
+<l:pane width="3" title="Hacker News Top">
+<tr>
+  <th class="pane">Title</th>
+  <th class="pane">Points</th>
+  <th class="pane">Posted by</th>
+</tr>
+<j:forEach var="news" items="${it.newslist}">
+  <tr>
+    <td align="left" class="pane" width="70px" style="word-break: break-all;"><a href="${news.url}">${news.title}</a></td>
+    <td class="pane" align="right" width="10px">${news.points}</td>
+    <td class="pane" align="right" width="20px">${news.postedBy}</td>
+  </tr>
+</j:forEach>
+</l:pane>
+</j:jelly>
