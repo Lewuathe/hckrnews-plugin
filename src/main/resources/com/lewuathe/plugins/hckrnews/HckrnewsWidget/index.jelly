@@ -7,10 +7,11 @@
 </tr>
 <j:forEach var="news" items="${it.newslist}">
   <tr>
-    <td align="left" class="pane" width="70px" style="word-break: break-all;"><a href="${news.url}">${news.title}</a></td>
-    <td class="pane" align="right" width="10px">${news.points}</td>
-    <td class="pane" align="right" width="20px">${news.postedBy}</td>
+    <td align="left" class="pane" style="width:10px;"><a href="${news.url}">${news.title}</a></td>
+    <td class="pane" align="right">${news.points}</td>
+    <td class="pane" align="right">${news.postedBy}</td>
   </tr>
 </j:forEach>
 </l:pane>
+Last Updated: ${it.lastupdatedstr}
 </j:jelly>
