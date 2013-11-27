@@ -189,7 +189,7 @@ public class HckrnewsWidget extends Widget {
             }
 		}
 			
-        protected String loadNews() {
+        public  String loadNews() {
 			InputStream is = null;
 			URL url = null;
 			try {
